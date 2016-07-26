@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">精灵宝可梦Go 虚拟定位</string>
+    <string name="action_settings">设置</string>
+    <string name="location.info">经度: %1$f 维度: %2$f</string>
+    <string name="null.longitude">经度不能为空</string>
+    <string name="null.latitude">维度不能为空</string>
+    <string name="open.nettraffic">请开启悬浮窗</string>
+    <string name="open.location">请开启定位功能</string>
+    <string name="loction.test">请在开发者选项中选择模拟信息位置应用</string>
+    <string name="quit">点击退出</string>
+    <string name="west">西</string>
+    <string name="east">东</string>
+    <string name="north">北</string>
+    <string name="south">南</string>
+</resources>

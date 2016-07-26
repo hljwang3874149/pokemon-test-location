@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/quit"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/float_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/west"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="west"
+                android:text="@string/west"/>
+
+            <Button
+                android:id="@+id/east"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="east"
+                android:text="@string/east"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/north"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40.0dip"
+                android:tag="north"
+                android:text="@string/north"/>
+
+            <Button
+                android:id="@+id/south"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="south"
+                android:text="@string/south"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

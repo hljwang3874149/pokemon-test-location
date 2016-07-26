@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pokemon GO Test Location</string>
+    <string name="action_settings">Settings</string>
+    <string name="location.info">longitude: %1$f latitude: %2$f</string>
+    <string name="open.location">please open location </string>
+    <string name="open.nettraffic">please open NetTraffic</string>
+    <string name="null.longitude">no longitude</string>
+    <string name="null.latitude">no latitude</string>
+    <string name="loction.test">please allow mock location  in develop options</string>
+    <string name="quit">quit</string>
+    <string name="west">west</string>
+    <string name="east">east</string>
+    <string name="north">north</string>
+    <string name="south">south</string>
+</resources>
