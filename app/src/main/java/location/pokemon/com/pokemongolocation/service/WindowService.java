@@ -10,7 +10,6 @@ import android.graphics.PixelFormat;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.SystemClock;
@@ -59,7 +58,6 @@ public class WindowService extends Service implements LocationListener {
     private void createFloatView() {
         this.wmParams = new WindowManager.LayoutParams();
         Application localApplication = getApplication();
-        getApplication();
         this.mWindowManager = ((WindowManager) localApplication.getSystemService(Context.WINDOW_SERVICE));
         //设置window type
         this.wmParams.type = WindowManager.LayoutParams.TYPE_PHONE;
@@ -67,7 +65,7 @@ public class WindowService extends Service implements LocationListener {
         this.wmParams.format = PixelFormat.RGBA_8888;
         //设置浮动窗口不可聚焦（实现操作除浮动窗口外的其他可见窗口的操作）
         this.wmParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
-        this.wmParams.gravity = Gravity.RIGHT | Gravity.BOTTOM;
+        this.wmParams.gravity = Gravity.END | Gravity.BOTTOM;
         // 以屏幕左上角为原点，设置x、y初始值，相对于gravity
         this.wmParams.x = 0;
         this.wmParams.y = 0;
